@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   return (
     <div className={styles.navbar}>
       <div>
-        <span>ELP</span>
+        <span className={styles.logo}>ELP</span>
       </div>
       <ul className={styles.navLinks}>
         <li>
