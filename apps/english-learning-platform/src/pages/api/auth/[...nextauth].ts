@@ -9,12 +9,12 @@ export const authOptions = {
   // Configure one or more authentication providers
   providers: [
     Google({
-      clientId: process.env.NEXT_GOOGLE_CLIENT_ID,
-      clientSecret: process.env.NEXT_GOOGLE_CLIENT_SECRET,
+      clientId: process.env.NEXT_GOOGLE_CLIENT_ID || "",
+      clientSecret: process.env.NEXT_GOOGLE_CLIENT_SECRET || "",
     }),
     Github({
-      clientId: process.env.NEXT_GOOGLE_CLIENT_ID,
-      clientSecret: process.env.NEXT_GOOGLE_CLIENT_SECRET,
+      clientId: process.env.NEXT_GOOGLE_CLIENT_ID || "",
+      clientSecret: process.env.NEXT_GOOGLE_CLIENT_SECRET || "",
     }),
   ],
   secret: process.env.NEXTAUTH_SECRET,
