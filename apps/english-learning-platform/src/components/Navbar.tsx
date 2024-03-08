@@ -14,8 +14,12 @@ const Navbar = () => {
             <Link href={"/room"}>
               <h1 className="text-white">Room</h1>
             </Link>
-            <h1 className="text-white">Games</h1>
-            <h1 className="text-white">Blog</h1>
+            <Link href={"/game"}>
+              <h1 className="text-white">Games</h1>
+            </Link>
+            <Link href={"/blog"}>
+              <h1 className="text-white">Blog</h1>
+            </Link>
           </div>
           {!session.data ? (
             <div className="flex items-center space-x-4 text-lg font-semibold tracking-tight">
